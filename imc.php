@@ -1,23 +1,3 @@
-<?php
-  $altura=$_POST['altura'];
-  $peso=$_POST['peso'];
-  function calcularImc($peso,$altura){
-    $imc=($peso/(pow($altura,2)));
-    return $imc;
-  }
-  function estas($peso,$altura){
-    $imc=calcularImc($peso,$altura);
-    if ($imc<18 ) {
-      echo "etas desnutrido";
-    } else if($imc>=18 and $imc<24.9) {
-      echo "estas en tu peso normal";
-    } else if($imc>=25 and $imc<=26.9){
-      echo "Tienes sobrepeso";
-    }
-    
-  }
-  estas($peso,$altura);
-?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -32,7 +12,35 @@
   <body>
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-sm-6">
+            <?php
+              $altura=$_POST['altura'];
+              $peso=$_POST['peso'];
+                function calcularImc($peso,$altura){
+                  $imc=($peso/(pow($altura,2)));
+                  return $imc;
+                }
+                function estas($peso,$altura){
+                  $imc=calcularImc($peso,$altura);
+                  if ($imc<18 ) {
+                    echo "etas desnutrido";
+                  } else if($imc>=18 and $imc<24.9) {
+                    echo "estas en tu peso normal";
+                  } else if($imc>=25 and $imc<=26.9){
+                    echo "Tienes sobrepeso";
+                  }else if($imc>=27 and $imc<=27.9){
+                    echo "Tienes obesidad";
+                  }else if($imc>=28 and $imc<=29.9){
+                    echo "Tienes obesidad de grado 1 riesgo alto para desarollar enfermedades cardiovasculares";
+                  }else if($imc>=30 and $imc<=39.9){
+                    echo "Tienes obesidad de grado 2 riesgo muy alto para desarollar enfermedades cardiovasculares";
+                  }else if($imc>40){
+                    echo "Tienes obesidad grado 3 Extrema o morbida riesgo etremadamente alto para desarollar enfermedades cardio vasculares";
+                  }
+                  
+                }
+              estas($peso,$altura);
+            ?>
             <a href="index.php" class="btn btn-primary">regresar</a>
           </div>
         </div>
