@@ -36,11 +36,13 @@
                     echo "Tienes obesidad de grado 2 riesgo muy alto para desarollar enfermedades cardiovasculares";
                   }else if($imc>40){
                     echo "Tienes obesidad grado 3 Extrema o morbida riesgo etremadamente alto para desarollar enfermedades cardio vasculares";
+                  }else{
+                    echo "ya estas bien cabron te vas a morir XD"
                   }
-                  
                 }
               estas($peso,$altura);
             ?>
+            <br>
             <a href="index.php" class="btn btn-primary">regresar</a>
           </div>
         </div>
