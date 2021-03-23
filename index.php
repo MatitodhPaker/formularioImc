@@ -13,6 +13,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
+          <h2>Calcular el IMC</h2>
             <form method="POST" action="imc.php">
               <div class="form-group">
                 <label for="Altura">Altura</label>
