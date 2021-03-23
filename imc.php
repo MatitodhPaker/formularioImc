@@ -37,7 +37,7 @@
                   }else if($imc>40){
                     echo "Tienes obesidad grado 3 Extrema o morbida riesgo etremadamente alto para desarollar enfermedades cardio vasculares";
                   }else{
-                    echo "ya estas bien cabron te vas a morir XD"
+                    echo "ya estas bien cabron te vas a morir XD";
                   }
                 }
               estas($peso,$altura);
