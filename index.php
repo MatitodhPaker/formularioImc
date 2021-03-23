@@ -16,11 +16,11 @@
             <form method="POST" action="imc.php">
               <div class="form-group">
                 <label for="Altura">Altura</label>
-                <input type="text" class="form-control" id="Altura" placeholder="ingrese su altura ej: 1.75" required pattern="[0.0-9.0]+">
+                <input type="text" class="form-control" id="Altura" name="altura" placeholder="ingrese su altura ej: 1.75" required pattern="[0.0-9.0]+">
               </div>
               <div class="form-group">
                 <label for="Peso">Peso</label>
-                <input type="text" class="form-control" id="Peso" placeholder="ingrese su peso ej: 56.700" required pattern="[0.0-9.0]+">
+                <input type="text" class="form-control" id="Peso" name="peso" placeholder="ingrese su peso ej: 56.700" required pattern="[0.0-9.0]+">
               </div>
               <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
