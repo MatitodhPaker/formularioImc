@@ -9,8 +9,10 @@
     $imc=calcularImc($peso,$altura);
     if ($imc<18 ) {
       echo "etas desnutrido";
-    } else if($imc>=18 and $imc<24.4) {
+    } else if($imc>=18 and $imc<24.9) {
       echo "estas en tu peso normal";
+    } else if($imc>=25 and $imc<=26.9){
+      echo "Tienes sobrepeso";
     }
     
   }
